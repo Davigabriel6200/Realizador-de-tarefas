@@ -1,0 +1,150 @@
+body {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    color: rgb(73, 73, 73);
+    align-items: center;
+    padding-top: 120px;
+    opacity: 90%;
+}
+
+h2 {
+    margin-left: 140px;
+}
+
+#tasks-container {
+    width: 500px;
+    margin-left: 330px;
+    margin-right: auto;
+}
+
+
+/* tasks former */
+
+#tasks-heard {
+    margin-top: 30px;
+}
+
+#add-tasks-form {
+    position: relative;
+}
+
+#add-tasks-form input {
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background: white;
+    color: grey;
+    padding: 15px;
+    width: 90%;
+    font-size: 20px;
+}
+
+#add-tasks-form input::placeholder {
+    color: grey;
+}
+
+#add-tasks-form input:focus {
+    outline: none;
+}
+
+#add-btn {
+    position: absolute;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80px;
+    height: 57px;
+    top: 0;
+    right: auto;
+}
+
+#add-btn:hover {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    color: rgb(255, 255, 255);
+    animation: but-btn 2s ease forwards;
+}
+
+@keyframes but-btn {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+ion-icon {
+    font-size: 28px;
+}
+
+
+/* tasks container */
+
+#tasks-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#tasks-list li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    position: relative;
+    border-bottom: 3px solid grey;
+    border-radius: 20px;
+    background-color: white;
+    color: grey;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#tasks-list ion-icon {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    cursor: pointer;
+    width: 40px;
+    padding: 5px;
+    transition: .3s;
+}
+
+.tasks-btn {
+    right: 40px;
+    color: gray;
+}
+
+.tasks-btn:hover {
+    color: #7ac5d8;
+}
+
+.tasks-remove {
+    right: 0px;
+    color: gray;
+}
+
+.tasks-remove:hover {
+    color: #e07878;
+}
+
+.hide {
+    display: none;
+}
+
+#tasks-list li.done {
+    background-color: #7ac5d8;
+    color: gray;
+    text-decoration: line-through;
+}

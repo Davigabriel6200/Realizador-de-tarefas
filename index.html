@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Projeto aula js/CSS/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title> Multi Tarefas </title>
+</head>
+
+
+<body>
+
+    <div id="tasks-container">
+
+        <div id="tasks-heard">
+
+            <h2>Salve suas próprias tarefas </h2>
+
+            <form action="" id="add-tasks-form">
+
+                <input type="text" id="tasks-title" placeholder="o que você ira fazer ?">
+
+                <button id="add-btn" type="submit">
+            <ion-icon name="checkmark-outline"></ion-icon>
+        </button>
+            </form>
+        </div>
+        <div id="tasks-taf-container">
+            <h2>Estas são suas tarefas :</h2>
+
+            <ul id="tasks-list">
+                <li class="tasks-box template hide">
+                    <span class="tasks-title"></span>
+                    <ion-icon class="tasks-btn" name="thumbs-up-outline"></ion-icon>
+                    <ion-icon class="tasks-remove" name="thumbs-down-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../Projeto aula js/js/copilando.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+
+
+</body>
+
+</html>
